@@ -262,6 +262,33 @@ let handleReserveTable = (req, res) => {
     return res.render('reserve-table.ejs')
 }
 
+let handlePostReserveTable = async (req, res) => {
+    try {
+        let customerName = "";
+        if (req.body.customerName === "") {
+            customerName = "Để Trống";
+        } else customerName = req.body.customerName;
+
+        let response1 = {
+            "text": `--- Thông tin người dùng ---
+            \nHọ và tên : ${customerName}
+            \nĐịa chỉ email : ${req.body.email}
+            \nSố điện thoại : ${req.body.phoneNumber}
+            `
+        }
+
+        await chatbotService.callSendAPI(req.body.psid, response1)
+        return res.status(200).json({
+            message: "OK"
+        })
+    } catch (e) {
+        console.log('lỗi post reserve table:', e);
+        return res.status(500).json({
+            message: "Error server"
+        })
+    }
+}
+
 module.exports = {
     getHomePage,
     postWebhook,
@@ -269,5 +296,5 @@ module.exports = {
     setupProfile,
     setupPersistentMenu,
     handleReserveTable,
-    // handlePostReserveTable
+    handlePostReserveTable
 }
