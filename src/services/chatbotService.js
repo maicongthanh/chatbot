@@ -29,7 +29,7 @@ let callSendAPI = (sender_psid, response) => {
 let handleGetStarted = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
-            response = { "text": "Xin chào mừng bạn ABC đến với Web đặt lịch khám bệnh của Mai Công Thành" }
+            let response = { "text": "Xin chào mừng bạn ABC đến với Web đặt lịch khám bệnh của Mai Công Thành" }
             await callSendAPI(sender_psid, response)
             resolve('done')
         } catch (e) {
