@@ -53,7 +53,7 @@ let handleGetStarted = (sender_psid) => {
         try {
             let username = await getUserName(sender_psid)
             let response1 = { "text": `Xin chào mừng bạn ${username} đến với Web đặt lịch khám bệnh của Mai Công Thành` }
-            let response2 = sendGetStartedTemplate();
+            let response2 = getStartedTemplate();
 
 
             //send text message
@@ -71,14 +71,14 @@ let handleGetStarted = (sender_psid) => {
     })
 }
 
-let sendGetStartedTemplate = () => {
+let getStartedTemplate = () => {
     let response = {
         "attachment": {
             "type": "template",
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Bệnh viên kính chào quý khách",
+                    "title": "Xin kính chào quý khách",
                     "subtitle": "Dưới đây là các lựa chọn của chúng tôi",
                     "image_url": IMAGE_GET_START,
                     "buttons": [
@@ -105,7 +105,83 @@ let sendGetStartedTemplate = () => {
     return response
 }
 
+let handleSendMainMenu = (sender_psid) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+
+            let response1 = getMainMenuTemplate();
+
+            await callSendAPI(sender_psid, response1)
+
+            resolve('done')
+        } catch (e) {
+            reject(e)
+        }
+    })
+}
+
+let getMainMenuTemplate = () => {
+    let response = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [
+                    {
+                        "title": "TRANG CHỦ",
+                        "subtitle": "Chúng tôi hân hạnh mang đến những sự trải nghiệm tốt nhất",
+                        "image_url": IMAGE_GET_START,
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "BÁC SĨ",
+                                "payload": "DOCTOR",
+                            },
+                            {
+                                "type": "postback",
+                                "title": "CHUYÊN KHOA",
+                                "payload": "SPECIALTY",
+                            },
+                            {
+                                "type": "postback",
+                                "title": "PHÒNG KHÁM",
+                                "payload": "CLINIC",
+                            }
+                        ],
+                    },
+                    {
+                        "title": "Giờ hoạt động",
+                        "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều",
+                        "image_url": IMAGE_GET_START,
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "ĐẶT LỊCH",
+                                "payload": "RESERVE",
+                            },
+                        ],
+                    },
+                    {
+                        "title": "Không gian bệnh viện",
+                        "subtitle": "Bệnh viện có chuyên tốt , sạch sẽ , luôn luôn hướng về bệnh nhân",
+                        "image_url": IMAGE_GET_START,
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "CHI TIẾT",
+                                "payload": "SHOW_ROOMS",
+                            },
+                        ],
+                    }
+                ]
+            }
+        }
+    }
+    return response
+}
+
 module.exports = {
     handleGetStarted,
-    callSendAPI
+    callSendAPI,
+    handleSendMainMenu
 }
