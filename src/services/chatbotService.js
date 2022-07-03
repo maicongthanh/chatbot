@@ -16,18 +16,6 @@ const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/maicongthanh-bot7'
 
 const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-bot8'
 
-const IMAGE_DETAIL_DOCTOR_1_1 = 'https://bit.ly/maicongthanh-bot9'
-const IMAGE_DETAIL_DOCTOR_1_2 = 'https://bit.ly/maicongthanh-bot10'
-const IMAGE_DETAIL_DOCTOR_1_3 = 'https://bit.ly/maicongthanh-bot11'
-
-const IMAGE_DETAIL_DOCTOR_2_1 = 'https://bit.ly/maicongthanh-bot12'
-const IMAGE_DETAIL_DOCTOR_2_2 = 'https://bit.ly/maicongthanh-bot13'
-const IMAGE_DETAIL_DOCTOR_2_3 = 'https://bit.ly/maicongthanh-bot14'
-
-const IMAGE_DETAIL_DOCTOR_3_1 = 'https://bit.ly/maicongthanh-bot15'
-const IMAGE_DETAIL_DOCTOR_3_2 = 'https://bit.ly/maicongthanh-bot16'
-const IMAGE_DETAIL_DOCTOR_3_3 = 'https://bit.ly/maicongthanh-bot17'
-
 let callSendAPI = (sender_psid, response) => {
     // Construct the message body
     let request_body = {
@@ -459,17 +447,17 @@ let getDetailViewDoctor1 = () => {
                     {
                         "title": "Thông tin cá nhân",
                         "subtitle": "Kinh nghiệm 5 năm trong lĩnh vực xương khớp",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_1,
+                        "image_url": IMAGE_VIEW_DOCTOR1,
                     },
                     {
                         "title": "Giờ khám bệnh",
                         "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều || Giá khám 500.000đ",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_2,
+                        "image_url": IMAGE_VIEW_DOCTOR1,
                     },
                     {
                         "title": "Địa chỉ khám",
                         "subtitle": "123 Nguyễn Đình Chiểu",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_3,
+                        "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -521,17 +509,17 @@ let getDetailViewDoctor2 = () => {
                     {
                         "title": "Thông tin cá nhân",
                         "subtitle": "Kinh nghiệm 10 năm trong lĩnh vực răng hàm mặt",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_1,
+                        "image_url": IMAGE_VIEW_DOCTOR2,
                     },
                     {
                         "title": "Giờ khám bệnh",
                         "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều || Giá khám 500.000đ",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_2,
+                        "image_url": IMAGE_VIEW_DOCTOR2,
                     },
                     {
                         "title": "Địa chỉ khám",
                         "subtitle": "456 Điện Biên Phủ",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_3,
+                        "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -582,17 +570,17 @@ let getDetailViewDoctor3 = () => {
                     {
                         "title": "Thông tin cá nhân",
                         "subtitle": "Kinh nghiệm 6 năm trong lĩnh vực răng phụ sản",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_1,
+                        "image_url": IMAGE_VIEW_DOCTOR3,
                     },
                     {
                         "title": "Giờ khám bệnh",
                         "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều || Giá khám 500.000đ",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_2,
+                        "image_url": IMAGE_VIEW_DOCTOR3,
                     },
                     {
                         "title": "Địa chỉ khám",
                         "subtitle": "789 Trần Xuân Soạn",
-                        "image_url": IMAGE_DETAIL_DOCTOR_1_3,
+                        "image_url": IMAGE_VIEW_DOCTOR4,
                         "buttons": [
                             {
                                 "type": "postback",
