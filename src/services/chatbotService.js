@@ -2,7 +2,7 @@ import request from "request"
 require('dotenv').config();
 
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN
-let callSendAPI = (res) => {
+let callSendAPI = (sender_psid, response) => {
     // Construct the message body
     let request_body = {
         "recipient": {
@@ -26,11 +26,11 @@ let callSendAPI = (res) => {
     });
 }
 
-let handleGetStarted = () => {
+let handleGetStarted = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             response = { "text": "Xin chào mừng bạn ABC đến với Web đặt lịch khám bệnh của Mai Công Thành" }
-            await callSendAPI(response)
+            await callSendAPI(sender_psid, response)
             resolve('done')
         } catch (e) {
             reject(e)
