@@ -258,42 +258,16 @@ let setupPersistentMenu = async (req, res) => {
     return res.send("Setup user persistent menu success");
 }
 
-let handleReserve = (req, res) => {
-    return res.render('reserve.ejs')
+let handleReserveTable = (req, res) => {
+    return res.render('reserve-table.ejs')
 }
 
-
-let handlePostReserveTable = async (req, res) => {
-    try {
-        let customerName = '';
-        if (req.body.customerName === '') {
-            customerName = 'Để trống';
-        } else customerName = req.body.customerName
-
-        let response1 = {
-            "text": `--- Thông tin khách hàng đặt bàn ---
-                \nHọ và tên : ${customerName}
-                \nĐịa chỉ email : ${req.body.email}
-                \nSố điện thoại : ${req.body.phoneNumber}
-            `
-        }
-        await chatbotService.callSendAPI(req.body.psid, response1);
-        return res.status(200).json({
-            message: "OK"
-        })
-    } catch (error) {
-        console.log('Lỗi port reserve table :', e);
-        return res.status(500).json({
-            message: 'Server error'
-        })
-    }
-}
 module.exports = {
     getHomePage,
     postWebhook,
     getWebhook,
     setupProfile,
     setupPersistentMenu,
-    handleReserve,
-    handlePostReserveTable
+    handleReserveTable,
+    // handlePostReserveTable
 }
