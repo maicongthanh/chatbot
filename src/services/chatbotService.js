@@ -341,51 +341,53 @@ let getSpecialtyTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "TRANG CHỦ",
-                        "subtitle": "Chúng tôi hân hạnh mang đến những sự trải nghiệm tốt nhất",
-                        "image_url": IMAGE_MAIN_MENU_2,
+                        "title": "Bác sĩ 1",
+                        "subtitle": "Chuyên khoa 1 , phòng khám 1",
+                        "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "BÁC SĨ",
-                                "payload": "DOCTOR",
-                            },
-                            {
-                                "type": "postback",
-                                "title": "CHUYÊN KHOA",
-                                "payload": "SPECIALTY",
-                            },
-                            {
-                                "type": "postback",
-                                "title": "PHÒNG KHÁM",
-                                "payload": "CLINIC",
+                                "title": "XEM CHI TIẾT",
+                                "payload": "VIEW_DOCTOR1",
                             }
                         ],
                     },
                     {
-                        "title": "Giờ hoạt động",
-                        "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều",
-                        "image_url": IMAGE_MAIN_MENU_3,
+                        "title": "Bác sĩ 2",
+                        "subtitle": "Chuyên khoa 2 , phòng khám 2",
+                        "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "ĐẶT LỊCH",
-                                "payload": "RESERVE",
-                            },
+                                "title": "XEM CHI TIẾT",
+                                "payload": "VIEW_DOCTOR2",
+                            }
                         ],
                     },
                     {
-                        "title": "Không gian bệnh viện",
-                        "subtitle": "Bệnh viện có chuyên tốt , sạch sẽ , luôn luôn hướng về bệnh nhân",
-                        "image_url": IMAGE_MAIN_MENU_4,
+                        "title": "Bác sĩ 3",
+                        "subtitle": "Chuyên khoa 3 , phòng khám 3",
+                        "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "CHI TIẾT",
-                                "payload": "SHOW_ROOMS",
-                            },
+                                "title": "XEM CHI TIẾT",
+                                "payload": "VIEW_DOCTOR3",
+                            }
                         ],
-                    }
+                    },
+                    {
+                        "title": "Quay trở lại ",
+                        "subtitle": "Quay trở lại Trang chính",
+                        "image_url": IMAGE_BACK_MAIN_MENU,
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "QUAY TRỞ LẠI",
+                                "payload": "BACK_TO_MAIN_MENU",
+                            }
+                        ],
+                    },
                 ]
             }
         }
@@ -416,51 +418,53 @@ let getClinicTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "TRANG CHỦ",
-                        "subtitle": "Chúng tôi hân hạnh mang đến những sự trải nghiệm tốt nhất",
-                        "image_url": IMAGE_MAIN_MENU_2,
+                        "title": "Bác sĩ 1",
+                        "subtitle": "Chuyên khoa 1 , phòng khám 1",
+                        "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "BÁC SĨ",
-                                "payload": "DOCTOR",
-                            },
-                            {
-                                "type": "postback",
-                                "title": "CHUYÊN KHOA",
-                                "payload": "SPECIALTY",
-                            },
-                            {
-                                "type": "postback",
-                                "title": "PHÒNG KHÁM",
-                                "payload": "CLINIC",
+                                "title": "XEM CHI TIẾT",
+                                "payload": "VIEW_DOCTOR1",
                             }
                         ],
                     },
                     {
-                        "title": "Giờ hoạt động",
-                        "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều",
-                        "image_url": IMAGE_MAIN_MENU_3,
+                        "title": "Bác sĩ 2",
+                        "subtitle": "Chuyên khoa 2 , phòng khám 2",
+                        "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "ĐẶT LỊCH",
-                                "payload": "RESERVE",
-                            },
+                                "title": "XEM CHI TIẾT",
+                                "payload": "VIEW_DOCTOR2",
+                            }
                         ],
                     },
                     {
-                        "title": "Không gian bệnh viện",
-                        "subtitle": "Bệnh viện có chuyên tốt , sạch sẽ , luôn luôn hướng về bệnh nhân",
-                        "image_url": IMAGE_MAIN_MENU_4,
+                        "title": "Bác sĩ 3",
+                        "subtitle": "Chuyên khoa 3 , phòng khám 3",
+                        "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "CHI TIẾT",
-                                "payload": "SHOW_ROOMS",
-                            },
+                                "title": "XEM CHI TIẾT",
+                                "payload": "VIEW_DOCTOR3",
+                            }
                         ],
-                    }
+                    },
+                    {
+                        "title": "Quay trở lại ",
+                        "subtitle": "Quay trở lại Trang chính",
+                        "image_url": IMAGE_BACK_MAIN_MENU,
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "QUAY TRỞ LẠI",
+                                "payload": "BACK_TO_MAIN_MENU",
+                            }
+                        ],
+                    },
                 ]
             }
         }
