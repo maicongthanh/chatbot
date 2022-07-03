@@ -147,13 +147,13 @@ async function handlePostback(sender_psid, received_postback) {
             await chatbotService.handleSendClinic(sender_psid);
             break;
         case 'VIEW_DOCTOR1':
-            // await chatbotService.handleSendClinic(sender_psid);
+            await chatbotService.handleViewDetailDoctor1(sender_psid);
             break;
         case 'VIEW_DOCTOR2':
-            // await chatbotService.handleSendClinic(sender_psid);
+            await chatbotService.handleViewDetailDoctor2(sender_psid);
             break;
         case 'VIEW_DOCTOR3':
-            // await chatbotService.handleSendClinic(sender_psid);
+            await chatbotService.handleViewDetailDoctor3(sender_psid);
             break;
         case 'BACK_TO_MAIN_MENU':
             await chatbotService.handleBackToMainMenu(sender_psid);
