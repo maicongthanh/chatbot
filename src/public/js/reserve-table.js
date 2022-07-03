@@ -19,6 +19,9 @@ window.extAsyncInit = function () {
         function error(err) {
             // error
             console.log('Lỗi đặt lịch bot', err);
+            //run fallback , get userID from URL
+            $("#psid").val(senderId);
+            handleClickButtonReserveTable();
         }
     );
 };
