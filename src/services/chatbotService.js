@@ -417,6 +417,10 @@ let getClinicTemplate = () => {
     }
     return response
 }
+
+let handleBackToMainMenu = async (sender_psid) => {
+    await handleSendMainMenu(sender_psid)
+}
 module.exports = {
     handleGetStarted,
     callSendAPI,
@@ -424,4 +428,5 @@ module.exports = {
     handleSendDoctor,
     handleSendSpecialty,
     handleSendClinic,
+    handleBackToMainMenu
 }
