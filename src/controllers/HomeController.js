@@ -257,10 +257,15 @@ let setupPersistentMenu = async (req, res) => {
     return res.send("Setup user persistent menu success");
 }
 
+let handleReserve = (req, res) => {
+    return res.render('reserve.ejs')
+}
+
 module.exports = {
     getHomePage,
     postWebhook,
     getWebhook,
     setupProfile,
-    setupPersistentMenu
+    setupPersistentMenu,
+    handleReserve
 }

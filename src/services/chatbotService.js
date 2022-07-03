@@ -149,9 +149,11 @@ let getStartedTemplate = () => {
                             "payload": "MAIN_PAGE",
                         },
                         {
-                            "type": "postback",
+                            "type": "web_url",
+                            "url": `${process.env.URL_WEB_VIEW_ORDER}`,
                             "title": "ĐẶT LỊCH",
-                            "payload": "RESERVE",
+                            "webview_height_ratio": "tall",
+                            "messenger_extensions": true
                         },
                         {
                             "type": "postback",
@@ -216,9 +218,11 @@ let getMainMenuTemplate = () => {
                         "image_url": IMAGE_MAIN_MENU_3,
                         "buttons": [
                             {
-                                "type": "postback",
+                                "type": "web_url",
+                                "url": `${process.env.URL_WEB_VIEW_ORDER}`,
                                 "title": "ĐẶT LỊCH",
-                                "payload": "RESERVE",
+                                "webview_height_ratio": "tall",
+                                "messenger_extensions": true
                             },
                         ],
                     },
@@ -689,9 +693,11 @@ let getTemplateButtonRoom = () => {
                         "payload": "MAIN_PAGE"
                     },
                     {
-                        "type": "postback",
+                        "type": "web_url",
+                        "url": `${process.env.URL_WEB_VIEW_ORDER}`,
                         "title": "ĐẶT LỊCH",
-                        "payload": "RESERVE"
+                        "webview_height_ratio": "tall",
+                        "messenger_extensions": true
                     },
                 ]
             }
