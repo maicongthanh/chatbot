@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN
 
-const IMAGE_GET_START = 'bit.ly/maicongthanh-bot-1'
+const IMAGE_GET_START = 'http://bit.ly/maicongthanh-bot-1'
 
 let callSendAPI = (sender_psid, response) => {
     // Construct the message body
