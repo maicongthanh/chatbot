@@ -5,6 +5,13 @@ const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN
 
 const IMAGE_GET_START = 'http://bit.ly/maicongthanh-bot-1'
 
+const IMAGE_MAIN_MENU_2 = 'https://bit.ly/maicongthanh-bot2'
+
+const IMAGE_MAIN_MENU_3 = 'https://bit.ly/maicongthanh-bot3'
+
+const IMAGE_MAIN_MENU_4 = 'https://bit.ly/maicongthanh-bot4'
+
+
 let callSendAPI = (sender_psid, response) => {
     // Construct the message body
     let request_body = {
@@ -130,7 +137,7 @@ let getMainMenuTemplate = () => {
                     {
                         "title": "TRANG CHỦ",
                         "subtitle": "Chúng tôi hân hạnh mang đến những sự trải nghiệm tốt nhất",
-                        "image_url": IMAGE_GET_START,
+                        "image_url": IMAGE_MAIN_MENU_2,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -152,7 +159,7 @@ let getMainMenuTemplate = () => {
                     {
                         "title": "Giờ hoạt động",
                         "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều",
-                        "image_url": IMAGE_GET_START,
+                        "image_url": IMAGE_MAIN_MENU_3,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -164,7 +171,7 @@ let getMainMenuTemplate = () => {
                     {
                         "title": "Không gian bệnh viện",
                         "subtitle": "Bệnh viện có chuyên tốt , sạch sẽ , luôn luôn hướng về bệnh nhân",
-                        "image_url": IMAGE_GET_START,
+                        "image_url": IMAGE_MAIN_MENU_4,
                         "buttons": [
                             {
                                 "type": "postback",
