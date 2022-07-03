@@ -114,7 +114,7 @@ let handleGetStarted = (sender_psid) => {
         try {
             let username = await getUserName(sender_psid)
             let response1 = { "text": `Xin chào mừng bạn ${username} đến với Web đặt lịch khám bệnh của Mai Công Thành` }
-            let response2 = getStartedTemplate();
+            let response2 = getStartedTemplate(sender_psid);
 
 
             //send text message
@@ -132,7 +132,7 @@ let handleGetStarted = (sender_psid) => {
     })
 }
 
-let getStartedTemplate = () => {
+let getStartedTemplate = (senderID) => {
     let response = {
         "attachment": {
             "type": "template",
@@ -150,7 +150,7 @@ let getStartedTemplate = () => {
                         },
                         {
                             "type": "web_url",
-                            "url": `${process.env.URL_WEB_VIEW_ORDER}`,
+                            "url": `${process.env.URL_WEB_VIEW_ORDER}?senderID=${senderID}`,
                             "title": "ĐẶT LỊCH",
                             "webview_height_ratio": "tall",
                             "messenger_extensions": true
@@ -172,7 +172,7 @@ let handleSendMainMenu = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
 
-            let response1 = getMainMenuTemplate();
+            let response1 = getMainMenuTemplate(sender_psid);
 
             await callSendAPI(sender_psid, response1)
 
@@ -183,7 +183,7 @@ let handleSendMainMenu = (sender_psid) => {
     })
 }
 
-let getMainMenuTemplate = () => {
+let getMainMenuTemplate = (senderID) => {
     let response = {
         "attachment": {
             "type": "template",
@@ -219,7 +219,7 @@ let getMainMenuTemplate = () => {
                         "buttons": [
                             {
                                 "type": "web_url",
-                                "url": `${process.env.URL_WEB_VIEW_ORDER}`,
+                                "url": `${process.env.URL_WEB_VIEW_ORDER}?senderID=${senderID}`,
                                 "title": "ĐẶT LỊCH",
                                 "webview_height_ratio": "tall",
                                 "messenger_extensions": true
@@ -679,7 +679,7 @@ let getImageRoomTemplate = () => {
     return response;
 }
 
-let getTemplateButtonRoom = () => {
+let getTemplateButtonRoom = (senderID) => {
     let response = {
         "attachment": {
             "type": "template",
@@ -694,7 +694,7 @@ let getTemplateButtonRoom = () => {
                     },
                     {
                         "type": "web_url",
-                        "url": `${process.env.URL_WEB_VIEW_ORDER}`,
+                        "url": `${process.env.URL_WEB_VIEW_ORDER}?senderID=${senderID}`,
                         "title": "ĐẶT LỊCH",
                         "webview_height_ratio": "tall",
                         "messenger_extensions": true
@@ -710,10 +710,10 @@ let handleShowRoomsDetail = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             //Send email
-            let response1 = getImageRoomTemplate();
+            let response1 = getImageRoomTemplate(sender_psid);
 
             //send a button template : text , button
-            let response2 = getTemplateButtonRoom();
+            let response2 = getTemplateButtonRoom(sender_psid);
 
             await callSendAPI(sender_psid, response1)
             await callSendAPI(sender_psid, response2)
