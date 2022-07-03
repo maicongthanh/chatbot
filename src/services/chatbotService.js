@@ -14,6 +14,7 @@ const IMAGE_VIEW_DOCTOR1 = 'https://bit.ly/maicongthanh-bot5'
 const IMAGE_VIEW_DOCTOR2 = 'https://bit.ly/maicongthanh-bot6'
 const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/maicongthanh-bot7'
 
+const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-bot8'
 
 let callSendAPI = (sender_psid, response) => {
     // Construct the message body
@@ -245,6 +246,18 @@ let getDoctorTemplate = () => {
                                 "type": "postback",
                                 "title": "XEM CHI TIẾT",
                                 "payload": "VIEW_DOCTOR3",
+                            }
+                        ],
+                    },
+                    {
+                        "title": "Quay trở lại ",
+                        "subtitle": "Quay trở lại Trang chính",
+                        "image_url": IMAGE_BACK_MAIN_MENU,
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "QUAY TRỞ LẠI",
+                                "payload": "BACK_TO_MAIN_MENU",
                             }
                         ],
                     },

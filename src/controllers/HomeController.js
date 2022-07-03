@@ -155,6 +155,8 @@ async function handlePostback(sender_psid, received_postback) {
         case 'VIEW_DOCTOR3':
             // await chatbotService.handleSendClinic(sender_psid);
             break;
+        case 'BACK_TO_MAIN_MENU':
+            break;
         default:
             response = { "text": `oop! I don't know response with postback ${payload}` }
     }
