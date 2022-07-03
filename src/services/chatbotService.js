@@ -87,16 +87,16 @@ let sendGetStartedTemplate = () => {
                             "title": "TRANG CHỦ",
                             "payload": "MAIN_PAGE",
                         },
-                        {
-                            "type": "postback",
-                            "title": "BÁC SĨ",
-                            "payload": "no",
-                        },
-                        {
-                            "type": "postback",
-                            "title": "PHÒNG KHÁM",
-                            "payload": "no",
-                        },
+                        // {
+                        //     "type": "postback",
+                        //     "title": "BÁC SĨ",
+                        //     "payload": "no",
+                        // },
+                        // {
+                        //     "type": "postback",
+                        //     "title": "PHÒNG KHÁM",
+                        //     "payload": "no",
+                        // },
                         {
                             "type": "postback",
                             "title": "ĐẶT LỊCH",
