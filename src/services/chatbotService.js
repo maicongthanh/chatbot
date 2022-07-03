@@ -78,25 +78,15 @@ let sendGetStartedTemplate = () => {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Xin chào bạn đến trang web đặt lịch khám bệnh",
+                    "title": "Bệnh viên kính chào quý khách",
                     "subtitle": "Dưới đây là các lựa chọn của chúng tôi",
                     "image_url": IMAGE_GET_START,
                     "buttons": [
                         {
                             "type": "postback",
-                            "title": "TRANG CHỦ",
+                            "title": "THÔNG TIN CHÍNH",
                             "payload": "MAIN_PAGE",
                         },
-                        // {
-                        //     "type": "postback",
-                        //     "title": "BÁC SĨ",
-                        //     "payload": "no",
-                        // },
-                        // {
-                        //     "type": "postback",
-                        //     "title": "PHÒNG KHÁM",
-                        //     "payload": "no",
-                        // },
                         {
                             "type": "postback",
                             "title": "ĐẶT LỊCH",

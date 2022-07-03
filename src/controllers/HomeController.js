@@ -129,9 +129,12 @@ async function handlePostback(sender_psid, received_postback) {
         case 'no':
             response = { "text": "Oops, try sending another image." }
             break;
+
+        case 'RESTART_BOT':
         case 'GET_STARTED':
             await chatbotService.handleGetStarted(sender_psid);
             break;
+
         default:
             response = { "text": `oop! I don't know response with postback ${payload}` }
     }
@@ -188,9 +191,50 @@ let setupProfile = async (req, res) => {
     return res.send("Setup user profile success");
 }
 
+
+let setupPersistentMenu = async (req, res) => {
+    let request_body = {
+        "persistent_menu": [
+            {
+                "locale": "default",
+                "composer_input_disabled": false,
+                "call_to_actions": [
+                    {
+                        "type": "web_url",
+                        "title": "My Facebook",
+                        "url": "https://www.facebook.com/profile.php?id=100024354322866",
+                        "webview_height_ratio": "full"
+                    },
+                    {
+                        "type": "postback",
+                        "title": "Khởi động lại bot",
+                        "payload": "RESTART_BOT"
+                    }
+                ]
+            }
+        ]
+    }
+
+    await request({
+        "uri": `https://graph.facebook.com/v14.0/me/messenger_profile?access_token=${PAGE_ACCESS_TOKEN}`,
+        "qs": { "access_token": PAGE_ACCESS_TOKEN },
+        "method": "POST",
+        "json": request_body
+    }, (err, res, body) => {
+        console.log(body);
+        if (!err) {
+            console.log('Setup user persistent menu success')
+        } else {
+            console.error("Unable to send message:" + err);
+        }
+    });
+    return res.send("Setup user persistent menu success");
+}
+
 module.exports = {
     getHomePage,
     postWebhook,
     getWebhook,
-    setupProfile
+    setupProfile,
+    setupPersistentMenu
 }
