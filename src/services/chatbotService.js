@@ -6,10 +6,13 @@ const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN
 const IMAGE_GET_START = 'http://bit.ly/maicongthanh-bot-1'
 
 const IMAGE_MAIN_MENU_2 = 'https://bit.ly/maicongthanh-bot2'
-
 const IMAGE_MAIN_MENU_3 = 'https://bit.ly/maicongthanh-bot3'
-
 const IMAGE_MAIN_MENU_4 = 'https://bit.ly/maicongthanh-bot4'
+
+
+const IMAGE_VIEW_DOCTOR1 = 'https://bit.ly/maicongthanh-bot5'
+const IMAGE_VIEW_DOCTOR2 = 'https://bit.ly/maicongthanh-bot6'
+const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/maicongthanh-bot7'
 
 
 let callSendAPI = (sender_psid, response) => {
@@ -212,7 +215,7 @@ let getDoctorTemplate = () => {
                     {
                         "title": "Bác sĩ 1",
                         "subtitle": "Chuyên khoa 1 , phòng khám 1",
-                        "image_url": IMAGE_MAIN_MENU_2,
+                        "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -224,7 +227,7 @@ let getDoctorTemplate = () => {
                     {
                         "title": "Bác sĩ 2",
                         "subtitle": "Chuyên khoa 2 , phòng khám 2",
-                        "image_url": IMAGE_MAIN_MENU_2,
+                        "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -236,7 +239,7 @@ let getDoctorTemplate = () => {
                     {
                         "title": "Bác sĩ 3",
                         "subtitle": "Chuyên khoa 3 , phòng khám 3",
-                        "image_url": IMAGE_MAIN_MENU_2,
+                        "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
                                 "type": "postback",
