@@ -662,6 +662,62 @@ let getDetailViewDoctor3 = () => {
     return response
 }
 
+let getImageRoomTemplate = () => {
+    let response = {
+        "attachment": {
+            "type": "image",
+            "payload": {
+                "url": IMAGE_MAIN_MENU_4,
+                "is_reusable": true
+            }
+        }
+    }
+    return response;
+}
+
+let getTemplateButtonRoom = () => {
+    let response = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "button",
+                "text": "Bệnh viện có thể phụ vụ tối đa 300 bệnh nhân",
+                "buttons": [
+                    {
+                        "type": "postback",
+                        "title": "Quay lại Trang Chính",
+                        "payload": "MAIN_PAGE"
+                    },
+                    {
+                        "type": "postback",
+                        "title": "ĐẶT LỊCH",
+                        "payload": "RESERVE"
+                    },
+                ]
+            }
+        }
+    }
+    return response
+}
+
+let handleShowRoomsDetail = (sender_psid) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            //Send email
+            let response1 = getImageRoomTemplate();
+
+            //send a button template : text , button
+            let response2 = getTemplateButtonRoom();
+
+            await callSendAPI(sender_psid, response1)
+            await callSendAPI(sender_psid, response2)
+            resolve('done')
+        } catch (e) {
+            reject(e)
+        }
+    })
+}
+
 module.exports = {
     handleGetStarted,
     callSendAPI,
@@ -673,4 +729,5 @@ module.exports = {
     handleViewDetailDoctor1,
     handleViewDetailDoctor2,
     handleViewDetailDoctor3,
+    handleShowRoomsDetail,
 }
