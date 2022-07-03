@@ -161,6 +161,7 @@ async function handlePostback(sender_psid, received_postback) {
         case 'SHOW_ROOMS':
             await chatbotService.handleShowRoomsDetail(sender_psid);
             break;
+
         default:
             response = { "text": `oop! I don't know response with postback ${payload}` }
     }
