@@ -269,7 +269,7 @@ let handlePostReserveTable = async (req, res) => {
     try {
         let customerName = "";
         if (req.body.customerName === "") {
-            customerName = "Để Trống";
+            customerName = chatbotService.getUserName(req.body.psid);
         } else customerName = req.body.customerName;
 
         let response1 = {

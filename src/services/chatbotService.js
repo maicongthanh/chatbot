@@ -736,4 +736,5 @@ module.exports = {
     handleViewDetailDoctor2,
     handleViewDetailDoctor3,
     handleShowRoomsDetail,
+    getUserName
 }
