@@ -806,7 +806,7 @@ let getBotMediaTemplate = () => {
                 "elements": [
                     {
                         "media_type": "<video>",
-                        "url": "https://www.facebook.com/maicongthanh45261/videos/1171446100303978",
+                        "url": "https://business.facebook.com/maicongthanh45261/videos/1171446100303978/",
                         "buttons": [
                             {
                                 "type": "postback",
