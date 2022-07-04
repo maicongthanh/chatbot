@@ -779,6 +779,55 @@ let handleShowRoomsDetail = (sender_psid) => {
     })
 }
 
+let handleGuideToUserBOt = () => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            //Send text message
+            let username = await getUserName(sender_psid)
+            let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của bệnh viện Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé ` }
+            //send a button template : text , button
+            let response2 = getBotMediaTemplate(sender_psid);
+
+            await callSendAPI(sender_psid, response1)
+            await callSendAPI(sender_psid, response2)
+            resolve('done')
+        } catch (e) {
+            reject(e)
+        }
+    })
+}
+
+let getBotMediaTemplate = () => {
+    let response = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "media",
+                "elements": [
+                    {
+                        "media_type": "<video>",
+                        "attachment_id": "1171446100303978",
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "Quay lại Trang Chính",
+                                "payload": "MAIN_PAGE"
+                            },
+                            {
+                                "type": "web_url",
+                                "title": "My Facebook",
+                                "url": "https://www.facebook.com/profile.php?id=100024354322866",
+                                "webview_height_ratio": "full"
+                            },
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+    return response
+}
+
 module.exports = {
     handleGetStarted,
     callSendAPI,
@@ -791,5 +840,6 @@ module.exports = {
     handleViewDetailDoctor2,
     handleViewDetailDoctor3,
     handleShowRoomsDetail,
-    getUserName
+    getUserName,
+    handleGuideToUserBOt
 }
