@@ -14,7 +14,19 @@ const IMAGE_VIEW_DOCTOR1 = 'https://bit.ly/eric-bot-5'
 const IMAGE_VIEW_DOCTOR2 = 'https://bit.ly/eric-bot-6'
 const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/eric-bot-7'
 
-const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-bot8'
+const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/eric-bot-8'
+
+const IMAGE_VIEW_DOCTOR4 = 'https://bit.ly/eric-bot-9'
+const IMAGE_VIEW_DOCTOR5 = 'https://bit.ly/eric-bot-10'
+const IMAGE_VIEW_DOCTOR6 = 'https://bit.ly/eric-bot-11'
+
+const IMAGE_VIEW_DOCTOR7 = 'https://bit.ly/eric-bot-12'
+const IMAGE_VIEW_DOCTOR8 = 'https://bit.ly/eric-bot-13'
+const IMAGE_VIEW_DOCTOR9 = 'https://bit.ly/eric-bot-14'
+
+const IMAGE_VIEW_DOCTOR10 = 'https://bit.ly/eric-bot-15'
+const IMAGE_VIEW_DOCTOR11 = 'https://bit.ly/eric-bot-16'
+const IMAGE_VIEW_DOCTOR12 = 'https://bit.ly/eric-bot-17'
 
 const IMAGE_GIF_WELCOME = 'https://media0.giphy.com/media/3o6ozt8eXv5SqeWcVO/giphy.gif?cid=ecf05e47ycsxrbmj35dhotplx5tr7u0t1ljn923c1hwt5zte&rid=giphy.gif'
 
@@ -283,7 +295,7 @@ let getMainMenuTemplate = (senderID) => {
                     },
                     {
                         "title": "Không gian nhà hàng",
-                        "subtitle": "Rộng rãi , thoáng mát và cực kì yên tĩnh",
+                        "subtitle": "Rộng rãi , thoáng mát và cực kì yên tĩnh và có thể chứa tối đa 300 khách hàng",
                         "image_url": IMAGE_MAIN_MENU_4,
                         "buttons": [
                             {
@@ -402,7 +414,7 @@ let getSpecialtyTemplate = () => {
                     {
                         "title": "Bác sĩ 1",
                         "subtitle": "Chuyên khoa 1 , phòng khám 1",
-                        "image_url": IMAGE_VIEW_DOCTOR1,
+                        "image_url": IMAGE_VIEW_DOCTOR4,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -414,7 +426,7 @@ let getSpecialtyTemplate = () => {
                     {
                         "title": "Bác sĩ 2",
                         "subtitle": "Chuyên khoa 2 , phòng khám 2",
-                        "image_url": IMAGE_VIEW_DOCTOR2,
+                        "image_url": IMAGE_VIEW_DOCTOR5,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -426,7 +438,7 @@ let getSpecialtyTemplate = () => {
                     {
                         "title": "Bác sĩ 3",
                         "subtitle": "Chuyên khoa 3 , phòng khám 3",
-                        "image_url": IMAGE_VIEW_DOCTOR3,
+                        "image_url": IMAGE_VIEW_DOCTOR6,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -558,19 +570,19 @@ let getDetailViewDoctor1 = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Thông tin cá nhân",
-                        "subtitle": "Kinh nghiệm 5 năm trong lĩnh vực xương khớp",
-                        "image_url": IMAGE_VIEW_DOCTOR1,
+                        "title": "Dưa hấu Vmart",
+                        "subtitle": "50.000dđ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR4,
                     },
                     {
-                        "title": "Giờ khám bệnh",
-                        "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều || Giá khám 500.000đ",
-                        "image_url": IMAGE_VIEW_DOCTOR1,
+                        "title": "Xoài Vmart",
+                        "subtitle": "20.000đ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR5,
                     },
                     {
-                        "title": "Địa chỉ khám",
-                        "subtitle": "123 Nguyễn Đình Chiểu",
-                        "image_url": IMAGE_VIEW_DOCTOR1,
+                        "title": "Ổi Vmart",
+                        "subtitle": "10.000đ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR6,
                         "buttons": [
                             {
                                 "type": "postback",
