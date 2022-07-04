@@ -16,7 +16,7 @@ const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/maicongthanh-bot7'
 
 const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-bot8'
 
-const IMAGE_GIF_WELCOME = 'https://bit.ly/maicongthanh-bot9'
+const IMAGE_GIF_WELCOME = 'https://media0.giphy.com/media/3o6ozt8eXv5SqeWcVO/giphy.gif?cid=ecf05e47ycsxrbmj35dhotplx5tr7u0t1ljn923c1hwt5zte&rid=giphy.gif'
 
 let callSendAPI = async (sender_psid, response) => {
     // Construct the message body
