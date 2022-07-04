@@ -16,6 +16,8 @@ const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/maicongthanh-bot7'
 
 const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-bot8'
 
+const IMAGE_GIF_WELCOME = 'https://bit.ly/maicongthanh-bot9'
+
 let callSendAPI = async (sender_psid, response) => {
     // Construct the message body
     let request_body = {
@@ -114,15 +116,25 @@ let handleGetStarted = (sender_psid) => {
         try {
             let username = await getUserName(sender_psid)
             let response1 = { "text": `Xin chào mừng bạn ${username} đến với Web đặt lịch khám bệnh của Mai Công Thành` }
-            let response2 = getStartedTemplate(sender_psid);
+
+            //send generic template message
+            // let response2 = getStartedTemplate(sender_psid);
+
+            //send an image
+            let response2 = getImageGetStartedTemplate();
+
+            //send a quick reply
+            let response3 = getStartedQuickReplyTemplate();
 
 
             //send text message
             await callSendAPI(sender_psid, response1)
 
-            //send generic template message
-
+            //send an image
             await callSendAPI(sender_psid, response2)
+            //send a quick reply
+
+            await callSendAPI(sender_psid, response3)
 
 
             resolve('done')
@@ -131,6 +143,8 @@ let handleGetStarted = (sender_psid) => {
         }
     })
 }
+
+
 
 let getStartedTemplate = (senderID) => {
     let response = {
@@ -166,6 +180,53 @@ let getStartedTemplate = (senderID) => {
         }
     }
     return response
+}
+
+let getStartedQuickReplyTemplate = () => {
+    let response = {
+        "text": "Dưới đây là các lựa chọn của chúng tôi",
+        "quick_replies": [
+            {
+                "content_type": "text",
+                "title": "TRANG CHÍNH",
+                "payload": "MAIN_PAGE",
+
+            },
+            {
+                "content_type": "text",
+                "title": "ĐẶT LỊCH",
+                "payload": "<POSTBACK_PAYLOAD>",
+
+
+                // "type": "web_url",
+                // "url": `${process.env.URL_WEB_VIEW_ORDER}/${senderID}`,
+                // "title": "ĐẶT LỊCH",
+                // "webview_height_ratio": "tall",
+                // "messenger_extensions": true
+
+            },
+            {
+                "content_type": "text",
+                "title": "HƯỚNG DẪN SỬ DỤNG BOT",
+                "payload": "GUIDE_TO_USE",
+
+            },
+        ]
+    }
+    return response
+}
+
+let getImageGetStartedTemplate = () => {
+    let response = {
+        "attachment": {
+            "type": "image",
+            "payload": {
+                "url": IMAGE_GIF_WELCOME,
+                "is_reusable": true
+            }
+        }
+    }
+    return response;
 }
 
 let handleSendMainMenu = (sender_psid) => {
