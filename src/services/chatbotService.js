@@ -412,9 +412,9 @@ let getSpecialtyTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Bác sĩ 1",
-                        "subtitle": "Chuyên khoa 1 , phòng khám 1",
-                        "image_url": IMAGE_VIEW_DOCTOR4,
+                        "title": "Món tráng miệng",
+                        "subtitle": "Nhà hàng có nhiều món tráng miệng hấp dẫn ",
+                        "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -424,9 +424,9 @@ let getSpecialtyTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Bác sĩ 2",
-                        "subtitle": "Chuyên khoa 2 , phòng khám 2",
-                        "image_url": IMAGE_VIEW_DOCTOR5,
+                        "title": "Cá bảy màu",
+                        "subtitle": "Cá nước mặn và có nước ngọt",
+                        "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -436,9 +436,9 @@ let getSpecialtyTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Bác sĩ 3",
+                        "title": "Thịt hun khói",
                         "subtitle": "Chuyên khoa 3 , phòng khám 3",
-                        "image_url": IMAGE_VIEW_DOCTOR6,
+                        "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -489,8 +489,8 @@ let getClinicTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Bác sĩ 1",
-                        "subtitle": "Chuyên khoa 1 , phòng khám 1",
+                        "title": "Món tráng miệng",
+                        "subtitle": "Nhà hàng có nhiều món tráng miệng hấp dẫn ",
                         "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
@@ -501,8 +501,8 @@ let getClinicTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Bác sĩ 2",
-                        "subtitle": "Chuyên khoa 2 , phòng khám 2",
+                        "title": "Cá bảy màu",
+                        "subtitle": "Cá nước mặn và có nước ngọt",
                         "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
@@ -513,7 +513,7 @@ let getClinicTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Bác sĩ 3",
+                        "title": "Thịt hun khói",
                         "subtitle": "Chuyên khoa 3 , phòng khám 3",
                         "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
