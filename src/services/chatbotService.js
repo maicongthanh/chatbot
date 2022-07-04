@@ -10,9 +10,9 @@ const IMAGE_MAIN_MENU_3 = 'https://bit.ly/eric-bot-3'
 const IMAGE_MAIN_MENU_4 = 'https://bit.ly/eric-bot-4'
 
 
-const IMAGE_VIEW_DOCTOR1 = 'https://bit.ly/maicongthanh-bot5'
-const IMAGE_VIEW_DOCTOR2 = 'https://bit.ly/maicongthanh-bot6'
-const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/maicongthanh-bot7'
+const IMAGE_VIEW_DOCTOR1 = 'https://bit.ly/eric-bot-5'
+const IMAGE_VIEW_DOCTOR2 = 'https://bit.ly/eric-bot-6'
+const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/eric-bot-7'
 
 const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-bot8'
 
@@ -323,8 +323,8 @@ let getDoctorTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Bác sĩ 1",
-                        "subtitle": "Chuyên khoa 1 , phòng khám 1",
+                        "title": "Món tráng miệng",
+                        "subtitle": "Nhà hàng có nhiều món tráng miệng hấp dẫn ",
                         "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
@@ -335,8 +335,8 @@ let getDoctorTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Bác sĩ 2",
-                        "subtitle": "Chuyên khoa 2 , phòng khám 2",
+                        "title": "Cá bảy màu",
+                        "subtitle": "Cá nước mặn và có nước ngọt",
                         "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
@@ -347,7 +347,7 @@ let getDoctorTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Bác sĩ 3",
+                        "title": "Thịt hun khói",
                         "subtitle": "Chuyên khoa 3 , phòng khám 3",
                         "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
