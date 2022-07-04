@@ -1,8 +1,45 @@
 require('dotenv').config();
 import request from 'request'
 import chatbotService from '../services/chatbotService'
+import moment from 'moment';
+const { GoogleSpreadsheet } = require('google-spreadsheet');
+
+
+
 
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID
+const GOOGLE_SERVICE_ACCOUNT_EMAIL = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
+const GOOGLE_PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY
+
+let writeDataToGoogleSheet = async (data) => {
+
+    let currentDate = new Date();
+
+    const format = "HH:mm DD/MM/YYYY"
+
+    let formatedDate = moment(currentDate).format(format);
+
+    const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+
+    await doc.useServiceAccountAuth({
+        client_email: GOOGLE_SERVICE_ACCOUNT_EMAIL,
+        private_key: GOOGLE_PRIVATE_KEY,
+    });
+
+    await doc.loadInfo(); // loads document properties and worksheets
+
+    const sheet = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] or doc.sheetsByTitle[title]
+
+    await sheet.addRow(
+        {
+            "Tên Facebook": data.username,
+            "Địa chỉ Email": data.email,
+            "Số điện thoại": data.phoneNumber,
+            "Thời gian": formatedDate,
+            "Tên khách hàng": data.customerName
+        });
+}
 
 let getHomePage = (req, res) => {
     return res.render('homepage.ejs');
@@ -267,9 +304,20 @@ let handleReserveTable = (req, res) => {
 
 let handlePostReserveTable = async (req, res) => {
     try {
+        let username = await chatbotService.getUserName(req.body.psid);
+
+
+        let data = {
+            username: username,
+            email: req.body.email,
+            phoneNumber: req.body.phoneNumber,
+            customerName: req.body.customerName
+        }
+        await writeDataToGoogleSheet(data)
+
         let customerName = "";
         if (req.body.customerName === "") {
-            customerName = await chatbotService.getUserName(req.body.psid);
+            customerName = username;
         } else customerName = req.body.customerName;
 
         let response1 = {
@@ -299,5 +347,6 @@ module.exports = {
     setupProfile,
     setupPersistentMenu,
     handleReserveTable,
-    handlePostReserveTable
+    handlePostReserveTable,
+    writeDataToGoogleSheet
 }
