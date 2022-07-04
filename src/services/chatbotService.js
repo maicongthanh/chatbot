@@ -17,7 +17,7 @@ const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/eric-bot-7'
 const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/eric-bot-8'
 
 const IMAGE_VIEW_DOCTOR4 = 'https://bit.ly/eric-bot-9'
-const IMAGE_VIEW_DOCTOR5 = 'https://bit.ly/eric-bot-10'
+const IMAGE_VIEW_DOCTOR5 = 'https://wallpapercave.com/dwp1x/wp2756455.jpg'
 const IMAGE_VIEW_DOCTOR6 = 'https://bit.ly/eric-bot-11'
 
 const IMAGE_VIEW_DOCTOR7 = 'https://bit.ly/eric-bot-12'
