@@ -201,19 +201,6 @@ let getStartedQuickReplyTemplate = () => {
             },
             {
                 "content_type": "text",
-                "title": "ĐẶT LỊCH",
-                "payload": "<POSTBACK_PAYLOAD>",
-
-
-                // "type": "web_url",
-                // "url": `${process.env.URL_WEB_VIEW_ORDER}/${senderID}`,
-                // "title": "ĐẶT LỊCH",
-                // "webview_height_ratio": "tall",
-                // "messenger_extensions": true
-
-            },
-            {
-                "content_type": "text",
                 "title": "HD SỬ DỤNG BOT",
                 "payload": "GUIDE_TO_USE",
 
