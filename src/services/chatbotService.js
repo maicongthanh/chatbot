@@ -796,7 +796,7 @@ let handleGuideToUserBOt = (sender_psid) => {
         try {
             //Send text message
             let username = await getUserName(sender_psid)
-            let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của nhà hàng Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé  ` }
+            let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của nhà hàng Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé 😁  ` }
             //send a button template : text , button
             let response2 = getBotMediaTemplate();
 
@@ -818,7 +818,7 @@ let getBotMediaTemplate = () => {
                 "elements": [
                     {
                         "media_type": "video",
-                        "url": "https://business.facebook.com/maicongthanh45261/videos/1171446100303978/",
+                        "url": "https://business.facebook.com/maicongthanh45261/videos/112828894815433/",
                         "buttons": [
                             {
                                 "type": "postback",
