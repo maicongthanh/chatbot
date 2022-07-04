@@ -779,14 +779,14 @@ let handleShowRoomsDetail = (sender_psid) => {
     })
 }
 
-let handleGuideToUserBOt = () => {
+let handleGuideToUserBOt = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             //Send text message
             let username = await getUserName(sender_psid)
             let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của bệnh viện Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé ` }
             //send a button template : text , button
-            let response2 = getBotMediaTemplate(sender_psid);
+            let response2 = getBotMediaTemplate();
 
             await callSendAPI(sender_psid, response1)
             await callSendAPI(sender_psid, response2)
@@ -806,7 +806,7 @@ let getBotMediaTemplate = () => {
                 "elements": [
                     {
                         "media_type": "<video>",
-                        "attachment_id": "1171446100303978",
+                        "url": "https://www.facebook.com/maicongthanh45261/videos/1171446100303978",
                         "buttons": [
                             {
                                 "type": "postback",
