@@ -21,7 +21,7 @@ const IMAGE_VIEW_DOCTOR5 = 'https://bit.ly/eric-bot-10'
 const IMAGE_VIEW_DOCTOR6 = 'https://bit.ly/eric-bot-11'
 
 const IMAGE_VIEW_DOCTOR7 = 'https://bit.ly/eric-bot-12'
-const IMAGE_VIEW_DOCTOR8 = 'https://bit.ly/eric-bot-13'
+const IMAGE_VIEW_DOCTOR8 = 'https://bit.ly/eric-bot-13-1'
 const IMAGE_VIEW_DOCTOR9 = 'https://bit.ly/eric-bot-14'
 
 const IMAGE_VIEW_DOCTOR10 = 'https://bit.ly/eric-bot-15'
