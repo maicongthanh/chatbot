@@ -632,19 +632,19 @@ let getDetailViewDoctor2 = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Thông tin cá nhân",
-                        "subtitle": "Kinh nghiệm 10 năm trong lĩnh vực răng hàm mặt",
-                        "image_url": IMAGE_VIEW_DOCTOR2,
+                        "title": "Cá hồi Châu Âu",
+                        "subtitle": "150.000đ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR7,
                     },
                     {
-                        "title": "Giờ khám bệnh",
-                        "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều || Giá khám 500.000đ",
-                        "image_url": IMAGE_VIEW_DOCTOR2,
+                        "title": "Cá chéo ông Táo",
+                        "subtitle": "200.000đ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR8,
                     },
                     {
-                        "title": "Địa chỉ khám",
-                        "subtitle": "456 Điện Biên Phủ",
-                        "image_url": IMAGE_VIEW_DOCTOR3,
+                        "title": "Cá ngừ Châu Mỹ",
+                        "subtitle": "300.000đ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR9,
                         "buttons": [
                             {
                                 "type": "postback",
@@ -693,19 +693,19 @@ let getDetailViewDoctor3 = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Thông tin cá nhân",
-                        "subtitle": "Kinh nghiệm 6 năm trong lĩnh vực răng phụ sản",
-                        "image_url": IMAGE_VIEW_DOCTOR3,
+                        "title": "Thịt lợn hun khói",
+                        "subtitle": "500.000đ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR10,
                     },
                     {
-                        "title": "Giờ khám bệnh",
-                        "subtitle": "Thứ 2 - Chủ nhật || 8 giờ sáng - 5 giờ chiều || Giá khám 500.000đ",
-                        "image_url": IMAGE_VIEW_DOCTOR3,
+                        "title": "Thịt bò Châu Mỹ",
+                        "subtitle": "200.000đ/1kg",
+                        "image_url": IMAGE_VIEW_DOCTOR11,
                     },
                     {
-                        "title": "Địa chỉ khám",
+                        "title": "Thịt trâu Đồ Sơn",
                         "subtitle": "789 Trần Xuân Soạn",
-                        "image_url": IMAGE_VIEW_DOCTOR4,
+                        "image_url": IMAGE_VIEW_DOCTOR12,
                         "buttons": [
                             {
                                 "type": "postback",
