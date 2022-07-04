@@ -18,30 +18,37 @@ const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-bot8'
 
 const IMAGE_GIF_WELCOME = 'https://media0.giphy.com/media/3o6ozt8eXv5SqeWcVO/giphy.gif?cid=ecf05e47ycsxrbmj35dhotplx5tr7u0t1ljn923c1hwt5zte&rid=giphy.gif'
 
-let callSendAPI = async (sender_psid, response) => {
-    // Construct the message body
-    let request_body = {
-        "recipient": {
-            "id": sender_psid
-        },
-        "message": response
-    }
-    await sendMarkReadMessage(sender_psid)
-    await sendTypingOn(sender_psid)
+let callSendAPI = (sender_psid, response) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            // Construct the message body
+            let request_body = {
+                "recipient": {
+                    "id": sender_psid
+                },
+                "message": response
+            }
+            await sendMarkReadMessage(sender_psid)
+            await sendTypingOn(sender_psid)
 
-    // Send the HTTP request to the Messenger Platform
-    request({
-        "uri": "https://graph.facebook.com/v9.0/me/messages",
-        "qs": { "access_token": PAGE_ACCESS_TOKEN },
-        "method": "POST",
-        "json": request_body
-    }, (err, res, body) => {
-        if (!err) {
-            console.log('message sent!')
-        } else {
-            console.error("Unable to send message:" + err);
+            // Send the HTTP request to the Messenger Platform
+            request({
+                "uri": "https://graph.facebook.com/v9.0/me/messages",
+                "qs": { "access_token": PAGE_ACCESS_TOKEN },
+                "method": "POST",
+                "json": request_body
+            }, (err, res, body) => {
+                if (!err) {
+                    resolve('message sent')
+                } else {
+                    console.error("Unable to send message:" + err);
+                }
+            });
+        } catch (e) {
+            reject(e)
         }
-    });
+    })
+
 }
 
 let sendTypingOn = (sender_psid) => {
