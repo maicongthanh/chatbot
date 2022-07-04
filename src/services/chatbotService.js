@@ -122,7 +122,7 @@ let handleGetStarted = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             let username = await getUserName(sender_psid)
-            let response1 = { "text": `Xin chào mừng bạn ${username} đến với Web đặt lịch khám bệnh của Mai Công Thành` }
+            let response1 = { "text": `Xin chào mừng bạn ${username} đến với nhà hàng của Mai Công Thành` }
 
             //send generic template message
             // let response2 = getStartedTemplate(sender_psid);
@@ -161,12 +161,12 @@ let getStartedTemplate = (senderID) => {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Xin kính chào quý khách",
-                    "subtitle": "Dưới đây là các lựa chọn của chúng tôi",
+                    "subtitle": "Dưới đây là các lựa chọn của nhà hàng",
                     "image_url": IMAGE_GET_START,
                     "buttons": [
                         {
                             "type": "postback",
-                            "title": "THÔNG TIN CHÍNH",
+                            "title": "THÔNG TIN MENU",
                             "payload": "MAIN_PAGE",
                         },
                         {
@@ -195,7 +195,7 @@ let getStartedQuickReplyTemplate = () => {
         "quick_replies": [
             {
                 "content_type": "text",
-                "title": "TRANG CHÍNH",
+                "title": "MENU CHÍNH",
                 "payload": "MAIN_PAGE",
 
             },
@@ -252,17 +252,17 @@ let getMainMenuTemplate = (senderID) => {
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "BÁC SĨ",
+                                "title": "BỮA SÁNG",
                                 "payload": "DOCTOR",
                             },
                             {
                                 "type": "postback",
-                                "title": "CHUYÊN KHOA",
+                                "title": "BỮA TRƯA",
                                 "payload": "SPECIALTY",
                             },
                             {
                                 "type": "postback",
-                                "title": "PHÒNG KHÁM",
+                                "title": "BỮA TỐI",
                                 "payload": "CLINIC",
                             }
                         ],
@@ -282,8 +282,8 @@ let getMainMenuTemplate = (senderID) => {
                         ],
                     },
                     {
-                        "title": "Không gian bệnh viện",
-                        "subtitle": "Bệnh viện có chuyên tốt , sạch sẽ , luôn luôn hướng về bệnh nhân",
+                        "title": "Không gian nhà hàng",
+                        "subtitle": "Rộng rãi , thoáng mát và cực kì yên tĩnh",
                         "image_url": IMAGE_MAIN_MENU_4,
                         "buttons": [
                             {
@@ -704,7 +704,7 @@ let getDetailViewDoctor3 = () => {
                     },
                     {
                         "title": "Quay trở lại ",
-                        "subtitle": "Quay trở lại Trang chính",
+                        "subtitle": "Quay trở lại MENU chính",
                         "image_url": IMAGE_BACK_MAIN_MENU,
                         "buttons": [
                             {
@@ -740,7 +740,7 @@ let getTemplateButtonRoom = (senderID) => {
             "type": "template",
             "payload": {
                 "template_type": "button",
-                "text": "Bệnh viện có thể phụ vụ tối đa 300 bệnh nhân",
+                "text": "Nhà hàng có thể phụ vụ tối đa 300 khách hàng",
                 "buttons": [
                     {
                         "type": "postback",
@@ -784,7 +784,7 @@ let handleGuideToUserBOt = (sender_psid) => {
         try {
             //Send text message
             let username = await getUserName(sender_psid)
-            let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của bệnh viện Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé ` }
+            let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của nhà hàng Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé  ` }
             //send a button template : text , button
             let response2 = getBotMediaTemplate();
 
@@ -810,7 +810,7 @@ let getBotMediaTemplate = () => {
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "Quay lại Trang Chính",
+                                "title": "Quay lại MENU Chính",
                                 "payload": "MAIN_PAGE"
                             },
                             {
