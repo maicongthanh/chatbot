@@ -28,7 +28,7 @@ const IMAGE_VIEW_DOCTOR10 = 'https://bit.ly/eric-bot-15'
 const IMAGE_VIEW_DOCTOR11 = 'https://bit.ly/eric-bot-16'
 const IMAGE_VIEW_DOCTOR12 = 'https://bit.ly/eric-bot-17'
 
-const IMAGE_GIF_WELCOME = 'https://media0.giphy.com/media/3o6ozt8eXv5SqeWcVO/giphy.gif?cid=ecf05e47ycsxrbmj35dhotplx5tr7u0t1ljn923c1hwt5zte&rid=giphy.gif'
+const IMAGE_GIF_WELCOME = 'bit.ly/maicongthanh-bot10-gif'
 
 let callSendAPI = (sender_psid, response) => {
     return new Promise(async (resolve, reject) => {
@@ -134,7 +134,7 @@ let handleGetStarted = (sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
             let username = await getUserName(sender_psid)
-            let response1 = { "text": `Xin chào mừng bạn ${username} đến với nhà hàng của Mai Công Thành` }
+            let response1 = { "text": `Xin chào mừng ${username} đến với web đặt lịch khám bệnh của Mai Công Thành` }
 
             //send generic template message
             // let response2 = getStartedTemplate(sender_psid);
@@ -173,18 +173,18 @@ let getStartedTemplate = (senderID) => {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Xin kính chào quý khách",
-                    "subtitle": "Dưới đây là các lựa chọn của nhà hàng",
+                    "subtitle": "Dưới đây là các lựa chọn của bệnh viện",
                     "image_url": IMAGE_GET_START,
                     "buttons": [
                         {
                             "type": "postback",
-                            "title": "THÔNG TIN MENU",
+                            "title": "THÔNG TIN CHÍNH",
                             "payload": "MAIN_PAGE",
                         },
                         {
                             "type": "web_url",
                             "url": `${process.env.URL_WEB_VIEW_ORDER}/${senderID}`,
-                            "title": "ĐẶT LỊCH",
+                            "title": "ĐẶT LỊCH TƯ VẤN",
                             "webview_height_ratio": "tall",
                             "messenger_extensions": true
                         },
@@ -207,7 +207,7 @@ let getStartedQuickReplyTemplate = () => {
         "quick_replies": [
             {
                 "content_type": "text",
-                "title": "MENU CHÍNH",
+                "title": "TRANG CHÍNH",
                 "payload": "MAIN_PAGE",
 
             },
@@ -258,23 +258,23 @@ let getMainMenuTemplate = (senderID) => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "MENU CHÍNH",
+                        "title": "TRANG CHÍNH",
                         "subtitle": "Chúng tôi hân hạnh mang đến những sự trải nghiệm tốt nhất",
                         "image_url": IMAGE_MAIN_MENU_2,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "BỮA SÁNG",
+                                "title": "BÁC SĨ",
                                 "payload": "DOCTOR",
                             },
                             {
                                 "type": "postback",
-                                "title": "BỮA TRƯA",
+                                "title": "CHUYÊN KHOA",
                                 "payload": "SPECIALTY",
                             },
                             {
                                 "type": "postback",
-                                "title": "BỮA TỐI",
+                                "title": "PHÒNG KHÁM",
                                 "payload": "CLINIC",
                             }
                         ],
@@ -287,7 +287,7 @@ let getMainMenuTemplate = (senderID) => {
                             {
                                 "type": "web_url",
                                 "url": `${process.env.URL_WEB_VIEW_ORDER}/${senderID}`,
-                                "title": "ĐẶT LỊCH",
+                                "title": "ĐẶT LỊCH TƯ VẤN",
                                 "webview_height_ratio": "tall",
                                 "messenger_extensions": true
                             },
@@ -762,7 +762,7 @@ let getTemplateButtonRoom = (senderID) => {
                     {
                         "type": "web_url",
                         "url": `${process.env.URL_WEB_VIEW_ORDER}/${senderID}`,
-                        "title": "ĐẶT LỊCH",
+                        "title": "ĐẶT LỊCH TƯ VẤN",
                         "webview_height_ratio": "tall",
                         "messenger_extensions": true
                     },
@@ -796,7 +796,7 @@ let handleGuideToUserBOt = (sender_psid) => {
         try {
             //Send text message
             let username = await getUserName(sender_psid)
-            let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của nhà hàng Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé 😁  ` }
+            let response1 = { "text": `Xin chào bạn ${username} , Mình là chat bot của web đặt lịch khám bệnh Mai Công Thành . \n Để biết thêm thông tin , vui lòng xem thông tin bên dưới nhé 😁  ` }
             //send a button template : text , button
             let response2 = getBotMediaTemplate();
 
