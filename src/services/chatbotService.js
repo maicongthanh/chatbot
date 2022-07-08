@@ -20,13 +20,13 @@ const IMAGE_VIEW_DOCTOR4 = 'http://bit.ly/maicongthanh-alex-1'
 const IMAGE_VIEW_DOCTOR5 = 'http://bit.ly/maicongthanh-alex-2'
 const IMAGE_VIEW_DOCTOR6 = 'http://bit.ly/maicongthanh-alex-3'
 
-const IMAGE_VIEW_DOCTOR7 = 'https://bit.ly/eric-bot-12'
-const IMAGE_VIEW_DOCTOR8 = 'https://bit.ly/eric-bot-13-1'
-const IMAGE_VIEW_DOCTOR9 = 'https://bit.ly/eric-bot-14'
+const IMAGE_VIEW_DOCTOR7 = 'https://bit.ly/maicongthanh-ronaldo-1'
+const IMAGE_VIEW_DOCTOR8 = 'https://bit.ly/maicongthanh-ronaldo-2'
+const IMAGE_VIEW_DOCTOR9 = 'https://bit.ly/maicongthanh-ronaldo-3'
 
-const IMAGE_VIEW_DOCTOR10 = 'https://bit.ly/eric-bot-15'
-const IMAGE_VIEW_DOCTOR11 = 'https://bit.ly/eric-bot-16'
-const IMAGE_VIEW_DOCTOR12 = 'https://bit.ly/eric-bot-17'
+const IMAGE_VIEW_DOCTOR10 = 'https://bit.ly/maicongthanh-rooney-1'
+const IMAGE_VIEW_DOCTOR11 = 'https://bit.ly/maicongthanh-rooney-2'
+const IMAGE_VIEW_DOCTOR12 = 'https://bit.ly/maicongthanh-rooney-3'
 
 const IMAGE_GIF_WELCOME = 'https://images6.fanpop.com/image/photos/37800000/-Hello-penguins-of-madagascar-37800672-500-500.gif'
 
