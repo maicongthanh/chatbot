@@ -5,9 +5,9 @@ const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN
 
 const IMAGE_GET_START = 'http://bit.ly/maicongthanh-bot-1'
 
-const IMAGE_MAIN_MENU_2 = 'https://bit.ly/eric-bot-2'
-const IMAGE_MAIN_MENU_3 = 'https://bit.ly/eric-bot-3'
-const IMAGE_MAIN_MENU_4 = 'https://bit.ly/eric-bot-4'
+const IMAGE_MAIN_MENU_2 = 'http://bit.ly/maicongthanh-bot2'
+const IMAGE_MAIN_MENU_3 = 'http://bit.ly/maicongthanh-bot3'
+const IMAGE_MAIN_MENU_4 = 'http://bit.ly/maicongthanh-bot4'
 
 
 const IMAGE_VIEW_DOCTOR1 = 'https://bit.ly/eric-bot-5'
