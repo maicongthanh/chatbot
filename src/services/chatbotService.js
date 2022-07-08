@@ -14,7 +14,7 @@ const IMAGE_VIEW_DOCTOR1 = 'http://bit.ly/maicongthanh-bot5'
 const IMAGE_VIEW_DOCTOR2 = 'http://bit.ly/maicongthanh-bot6'
 const IMAGE_VIEW_DOCTOR3 = 'http://bit.ly/maicongthanh-bot7'
 
-const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/eric-bot-8'
+const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/maicongthanh-manchester'
 
 const IMAGE_VIEW_DOCTOR4 = 'http://bit.ly/maicongthanh-alex-1'
 const IMAGE_VIEW_DOCTOR5 = 'http://bit.ly/maicongthanh-alex-2'
