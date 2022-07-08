@@ -10,15 +10,15 @@ const IMAGE_MAIN_MENU_3 = 'http://bit.ly/maicongthanh-bot3'
 const IMAGE_MAIN_MENU_4 = 'http://bit.ly/maicongthanh-bot4'
 
 
-const IMAGE_VIEW_DOCTOR1 = 'https://bit.ly/eric-bot-5'
-const IMAGE_VIEW_DOCTOR2 = 'https://bit.ly/eric-bot-6'
-const IMAGE_VIEW_DOCTOR3 = 'https://bit.ly/eric-bot-7'
+const IMAGE_VIEW_DOCTOR1 = 'http://bit.ly/maicongthanh-bot5'
+const IMAGE_VIEW_DOCTOR2 = 'http://bit.ly/maicongthanh-bot6'
+const IMAGE_VIEW_DOCTOR3 = 'http://bit.ly/maicongthanh-bot7'
 
 const IMAGE_BACK_MAIN_MENU = 'https://bit.ly/eric-bot-8'
 
-const IMAGE_VIEW_DOCTOR4 = 'https://bit.ly/eric-bot-9'
-const IMAGE_VIEW_DOCTOR5 = 'https://wallpapercave.com/dwp1x/wp2756455.jpg'
-const IMAGE_VIEW_DOCTOR6 = 'https://bit.ly/eric-bot-11'
+const IMAGE_VIEW_DOCTOR4 = 'http://bit.ly/maicongthanh-alex-1'
+const IMAGE_VIEW_DOCTOR5 = 'http://bit.ly/maicongthanh-alex-2'
+const IMAGE_VIEW_DOCTOR6 = 'http://bit.ly/maicongthanh-alex-3'
 
 const IMAGE_VIEW_DOCTOR7 = 'https://bit.ly/eric-bot-12'
 const IMAGE_VIEW_DOCTOR8 = 'https://bit.ly/eric-bot-13-1'
@@ -294,8 +294,8 @@ let getMainMenuTemplate = (senderID) => {
                         ],
                     },
                     {
-                        "title": "Không gian nhà hàng",
-                        "subtitle": "Rộng rãi , thoáng mát và cực kì yên tĩnh và có thể chứa tối đa 300 khách hàng",
+                        "title": "Không gian bệnh viện",
+                        "subtitle": "Rộng rãi , thoáng mát và cực kì yên tĩnh",
                         "image_url": IMAGE_MAIN_MENU_4,
                         "buttons": [
                             {
@@ -335,8 +335,8 @@ let getDoctorTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Món tráng miệng",
-                        "subtitle": "Nhà hàng có nhiều món tráng miệng hấp dẫn ",
+                        "title": "Alex Ferguson",
+                        "subtitle": "Huấn luyện viên của Manchester United",
                         "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
@@ -347,8 +347,8 @@ let getDoctorTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Cá bảy màu",
-                        "subtitle": "Cá nước mặn và có nước ngọt",
+                        "title": "Cristiano Ronaldo",
+                        "subtitle": "Cầu thủ của Manchester United",
                         "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
@@ -359,8 +359,8 @@ let getDoctorTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Thịt hun khói",
-                        "subtitle": "Chuyên khoa 3 , phòng khám 3",
+                        "title": "Wayne Rooney",
+                        "subtitle": "Quỷ đầu đàn",
                         "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
@@ -412,8 +412,8 @@ let getSpecialtyTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Món tráng miệng",
-                        "subtitle": "Nhà hàng có nhiều món tráng miệng hấp dẫn ",
+                        "title": "Manchester United",
+                        "subtitle": "Manchester United",
                         "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
@@ -424,8 +424,8 @@ let getSpecialtyTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Cá bảy màu",
-                        "subtitle": "Cá nước mặn và có nước ngọt",
+                        "title": "Chelsea FC",
+                        "subtitle": "Chelsea FC",
                         "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
@@ -436,8 +436,8 @@ let getSpecialtyTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Thịt hun khói",
-                        "subtitle": "Chuyên khoa 3 , phòng khám 3",
+                        "title": "Liverpool FC",
+                        "subtitle": "Liverpool FC",
                         "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
@@ -489,8 +489,8 @@ let getClinicTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Món tráng miệng",
-                        "subtitle": "Nhà hàng có nhiều món tráng miệng hấp dẫn ",
+                        "title": "Arsenal",
+                        "subtitle": "Arsenal ",
                         "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
@@ -501,8 +501,8 @@ let getClinicTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Cá bảy màu",
-                        "subtitle": "Cá nước mặn và có nước ngọt",
+                        "title": "Manchester City ",
+                        "subtitle": "Manchester City",
                         "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
@@ -513,7 +513,7 @@ let getClinicTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Thịt hun khói",
+                        "title": "Tottenham Hotspur F.C.",
                         "subtitle": "Chuyên khoa 3 , phòng khám 3",
                         "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
@@ -570,18 +570,18 @@ let getDetailViewDoctor1 = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Dưa hấu Vmart",
-                        "subtitle": "50.000dđ/1kg",
+                        "title": "Thời gian huấn luyện",
+                        "subtitle": "26 năm ở câu lạc bộ",
                         "image_url": IMAGE_VIEW_DOCTOR4,
                     },
                     {
-                        "title": "Xoài Vmart",
-                        "subtitle": "20.000đ/1kg",
+                        "title": "Biệt danh ",
+                        "subtitle": "Máy sấy tóc",
                         "image_url": IMAGE_VIEW_DOCTOR5,
                     },
                     {
-                        "title": "Ổi Vmart",
-                        "subtitle": "10.000đ/1kg",
+                        "title": "Sở thích",
+                        "subtitle": "Nhai kẹo cao su",
                         "image_url": IMAGE_VIEW_DOCTOR6,
                         "buttons": [
                             {
@@ -632,18 +632,18 @@ let getDetailViewDoctor2 = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Cá hồi Châu Âu",
-                        "subtitle": "150.000đ/1kg",
+                        "title": "Thời gian ở câu lạc bộ",
+                        "subtitle": "Trải qua 2 khoảng thời gian khác nhau",
                         "image_url": IMAGE_VIEW_DOCTOR7,
                     },
                     {
-                        "title": "Cá chéo ông Táo",
-                        "subtitle": "200.000đ/1kg",
+                        "title": "Biệt danh",
+                        "subtitle": "CR7",
                         "image_url": IMAGE_VIEW_DOCTOR8,
                     },
                     {
-                        "title": "Cá ngừ Châu Mỹ",
-                        "subtitle": "300.000đ/1kg",
+                        "title": "Sở thích",
+                        "subtitle": "Khoe body",
                         "image_url": IMAGE_VIEW_DOCTOR9,
                         "buttons": [
                             {
@@ -693,18 +693,18 @@ let getDetailViewDoctor3 = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Thịt lợn hun khói",
-                        "subtitle": "500.000đ/1kg",
+                        "title": "Thời gian ở câu lạc bộ",
+                        "subtitle": "13 năm thi đấu ở đây",
                         "image_url": IMAGE_VIEW_DOCTOR10,
                     },
                     {
-                        "title": "Thịt bò Châu Mỹ",
-                        "subtitle": "200.000đ/1kg",
+                        "title": "Biệt danh",
+                        "subtitle": "Gã Shrek ",
                         "image_url": IMAGE_VIEW_DOCTOR11,
                     },
                     {
-                        "title": "Thịt trâu Đồ Sơn",
-                        "subtitle": "789 Trần Xuân Soạn",
+                        "title": "Sở thích",
+                        "subtitle": "Đụng là xúc",
                         "image_url": IMAGE_VIEW_DOCTOR12,
                         "buttons": [
                             {
