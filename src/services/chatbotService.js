@@ -28,7 +28,7 @@ const IMAGE_VIEW_DOCTOR10 = 'https://bit.ly/eric-bot-15'
 const IMAGE_VIEW_DOCTOR11 = 'https://bit.ly/eric-bot-16'
 const IMAGE_VIEW_DOCTOR12 = 'https://bit.ly/eric-bot-17'
 
-const IMAGE_GIF_WELCOME = 'bit.ly/maicongthanh-bot10-gif'
+const IMAGE_GIF_WELCOME = 'bit.ly/maicongthanh-gif-1'
 
 let callSendAPI = (sender_psid, response) => {
     return new Promise(async (resolve, reject) => {
