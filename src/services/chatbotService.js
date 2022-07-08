@@ -28,7 +28,7 @@ const IMAGE_VIEW_DOCTOR10 = 'https://bit.ly/eric-bot-15'
 const IMAGE_VIEW_DOCTOR11 = 'https://bit.ly/eric-bot-16'
 const IMAGE_VIEW_DOCTOR12 = 'https://bit.ly/eric-bot-17'
 
-const IMAGE_GIF_WELCOME = 'https://bit.ly/maicongthanh-gif-1'
+const IMAGE_GIF_WELCOME = 'https://images6.fanpop.com/image/photos/37800000/-Hello-penguins-of-madagascar-37800672-500-500.gif'
 
 let callSendAPI = (sender_psid, response) => {
     return new Promise(async (resolve, reject) => {
