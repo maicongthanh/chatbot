@@ -583,13 +583,6 @@ let getDetailViewDoctor1 = () => {
                         "title": "Sở thích",
                         "subtitle": "Nhai kẹo cao su",
                         "image_url": IMAGE_VIEW_DOCTOR6,
-                        "buttons": [
-                            {
-                                "type": "postback",
-                                "title": "CHI TIẾT",
-                                "payload": "SHOW_ROOMS",
-                            },
-                        ],
                     },
                     {
                         "title": "Quay trở lại ",
@@ -645,13 +638,6 @@ let getDetailViewDoctor2 = () => {
                         "title": "Sở thích",
                         "subtitle": "Khoe body",
                         "image_url": IMAGE_VIEW_DOCTOR9,
-                        "buttons": [
-                            {
-                                "type": "postback",
-                                "title": "CHI TIẾT",
-                                "payload": "SHOW_ROOMS",
-                            },
-                        ],
                     },
                     {
                         "title": "Quay trở lại ",
@@ -706,13 +692,6 @@ let getDetailViewDoctor3 = () => {
                         "title": "Sở thích",
                         "subtitle": "Đụng là xúc",
                         "image_url": IMAGE_VIEW_DOCTOR12,
-                        "buttons": [
-                            {
-                                "type": "postback",
-                                "title": "CHI TIẾT",
-                                "payload": "SHOW_ROOMS",
-                            },
-                        ],
                     },
                     {
                         "title": "Quay trở lại ",
@@ -752,7 +731,7 @@ let getTemplateButtonRoom = (senderID) => {
             "type": "template",
             "payload": {
                 "template_type": "button",
-                "text": "Nhà hàng có thể phụ vụ tối đa 300 khách hàng",
+                "text": "Không gian bệnh viện rộng rãi , yên tĩnh , nhân viên phục vụ nhiệt tình chu đáo",
                 "buttons": [
                     {
                         "type": "postback",
