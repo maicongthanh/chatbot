@@ -412,8 +412,8 @@ let getSpecialtyTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Manchester United",
-                        "subtitle": "Manchester United",
+                        "title": "Alex Ferguson",
+                        "subtitle": "Huấn luyện viên của Manchester United",
                         "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
@@ -424,8 +424,8 @@ let getSpecialtyTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Chelsea FC",
-                        "subtitle": "Chelsea FC",
+                        "title": "Cristiano Ronaldo",
+                        "subtitle": "Cầu thủ của Manchester United",
                         "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
@@ -436,8 +436,8 @@ let getSpecialtyTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Liverpool FC",
-                        "subtitle": "Liverpool FC",
+                        "title": "Wayne Rooney",
+                        "subtitle": "Quỷ đầu đàn",
                         "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
@@ -489,8 +489,8 @@ let getClinicTemplate = () => {
                 "template_type": "generic",
                 "elements": [
                     {
-                        "title": "Arsenal",
-                        "subtitle": "Arsenal ",
+                        "title": "Alex Ferguson",
+                        "subtitle": "Huấn luyện viên của Manchester United",
                         "image_url": IMAGE_VIEW_DOCTOR1,
                         "buttons": [
                             {
@@ -501,8 +501,8 @@ let getClinicTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Manchester City ",
-                        "subtitle": "Manchester City",
+                        "title": "Cristiano Ronaldo",
+                        "subtitle": "Cầu thủ của Manchester United",
                         "image_url": IMAGE_VIEW_DOCTOR2,
                         "buttons": [
                             {
@@ -513,8 +513,8 @@ let getClinicTemplate = () => {
                         ],
                     },
                     {
-                        "title": "Tottenham Hotspur F.C.",
-                        "subtitle": "Chuyên khoa 3 , phòng khám 3",
+                        "title": "Wayne Rooney",
+                        "subtitle": "Quỷ đầu đàn",
                         "image_url": IMAGE_VIEW_DOCTOR3,
                         "buttons": [
                             {
